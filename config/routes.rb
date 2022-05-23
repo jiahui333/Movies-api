@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  root to: "api/v1/movies#index"
   namespace :api do
     namespace :v1 do
-      root to:"movies#index"
       resources :movies
     end
   end
